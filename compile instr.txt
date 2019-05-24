@@ -1,0 +1,12 @@
+For compiler it is:
+	gcc encoder.c -o enc -std=gnu99
+For the sender/receiver it is:
+	gcc sender.c -o sender -std=gnu99
+
+
+Then
+	./enc 8080
+	./sender 127.0.0.1 8080 < case.txt
+
+
+gcc main.c -o min -std=gnu99
